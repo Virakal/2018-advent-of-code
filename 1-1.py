@@ -1,4 +1,4 @@
-with open('1-1.txt', 'r') as f:
+with open('data/1.txt', 'r') as f:
     lines = list(f)
 
 lines = (int(x) for x in lines)

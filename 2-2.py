@@ -17,7 +17,7 @@ def try_combo(x, y):
 
 
 # Main
-with open('2-1.txt', 'r') as f:
+with open('data/2.txt', 'r') as f:
     lines = list(f)
 
 for line1 in lines:

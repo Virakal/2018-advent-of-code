@@ -1,6 +1,6 @@
 from claim import Claim
 
-with open('3.txt', 'r') as f:
+with open('data/3.txt', 'r') as f:
     lines = list(f)
 
 # Debug

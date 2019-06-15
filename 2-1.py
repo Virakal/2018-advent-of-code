@@ -1,4 +1,4 @@
-with open('2-1.txt', 'r') as f:
+with open('data/2.txt', 'r') as f:
     lines = list(f)
 
 has2 = 0
