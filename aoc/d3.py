@@ -1,4 +1,4 @@
-from claim import Claim
+from aoc.claim import Claim
 
 
 def d3_1(lines):
@@ -22,9 +22,13 @@ def d3_1(lines):
     return len(disputed_coords)
 
 
+def d3_2(lines):
+    return 'NYI'
+
+
 if __name__ == '__main__':
     with open('data/3.txt', 'r') as f:
         lines = list(f)
 
     print('Part 1:', d3_1(lines))
-    print('Part 2:', 'NYI')
+    print('Part 2:', d3_2(lines))
