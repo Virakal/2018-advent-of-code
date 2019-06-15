@@ -15,6 +15,7 @@ def try_combo(x, y):
         print(''.join(common))
         exit()
 
+
 # Main
 with open('2-1.txt', 'r') as f:
     lines = list(f)
