@@ -1,11 +1,15 @@
 from aoc.d2 import d2_1, d2_2
+import pytest
 
 
-def test_d2_1_answer():
+@pytest.fixture
+def filedata():
     with open('data/2.txt', 'r') as f:
-        lines = list(f)
+        return list(f)
 
-    assert d2_1(lines) == 7470
+
+def test_d2_1_answer(filedata):
+    assert d2_1(filedata) == 7470
 
 
 def test_d2_1_example_1():
@@ -22,11 +26,8 @@ def test_d2_1_example_1():
     assert d2_1(lines) == 12
 
 
-def test_d2_2_answer():
-    with open('data/2.txt', 'r') as f:
-        lines = list(f)
-
-    assert d2_2(lines) == 'kqzxdenujwcstybmgvyiofrrd'
+def test_d2_2_answer(filedata):
+    assert d2_2(filedata) == 'kqzxdenujwcstybmgvyiofrrd'
 
 
 def test_d2_2_example_1():

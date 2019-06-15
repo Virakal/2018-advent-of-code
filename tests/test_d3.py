@@ -1,11 +1,15 @@
 from aoc.d3 import d3_1, d3_2
+import pytest
 
 
-def test_d3_1_answer():
+@pytest.fixture
+def filedata():
     with open('data/3.txt', 'r') as f:
-        lines = list(f)
+        return list(f)
 
-    assert d3_1(lines) == 114946
+
+def test_d3_1_answer(filedata):
+    assert d3_1(filedata) == 114946
 
 
 def test_d3_1_example_1():
